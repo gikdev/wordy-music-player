@@ -1,0 +1,46 @@
+@import './colar';
+@import './fonts';
+@import './reusable';
+@import './base';
+
+.main {
+  flex-direction: column;
+  padding: 2rem 3rem;
+  max-width: 50rem;
+  width: 100%;
+  align-self: center;
+
+  h1 {
+    margin-bottom: 3rem;
+    font-family: IranNastaliq;
+    font-weight: normal;
+    font-size: 300%;
+    text-align: center;
+  }
+  input, textarea, button {
+    outline: none;
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    background: $gray-10;
+    border: 1px solid $gray-0;
+    border-radius: 1rem;
+    resize: vertical;
+    color: $gray-0;
+    margin-bottom: 1rem;
+    font-family: Vazirmatn;
+  }
+  input, #output {
+    direction: ltr;
+    font-family: monospace;
+  }
+  textarea:not(#output) {
+    font-size: 2rem;
+  }
+  audio {
+    width: 100%;
+  }
+  button {
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>سازنده کلمه موزیک پلیر</title>
+</head>
+<body>
+  <div id="app">
+    <main class="main">
+      <h1>سازنده کلمه موزیک پلیر</h1>
+      <section class="builder">
+        <form id="startForm">
+          <input type="url" name="musicURL" id="musicURL">
+          <textarea name="lyrics" id="lyrics"></textarea>
+          <button type="submit">اضافه کن</button>
+        </form>
+        <div class="musicWrapper">
+          <audio id="music"></audio>
+        </div>
+        <textarea id="output"></textarea>
+        <button id="add">اینجا ثبت کن</button>
+      </section>
+    </main>
+  </div>
+  <script type="module" src="/src/scripts/builder.ts"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>کلمه موزیک پلیر...</title>
+</head>
+<body>
+  <div id="app">
+    <header class="header">
+      <nav class="nav">
+        <a href="." class="nav__item nav__item--logo logo">
+          <img class="logo__img" src="/images/logo.png" alt="" />
+          <span class="logo__text">کلمه موزیک پلیر</span>
+        </a>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="player">
+        <div class="wrapper">
+          <p id="word">----</p>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>
+        ساخته شده توسط
+        <a class="link" href="https://github.com/gikdev/">محمدمهدی بهرامی</a>
+        و موزیک از
+        <a class="link" href="https://kashoob.com/">وب‌سایت کاشوب</a>
+      </p>
+    </footer>
+  </div>
+  <audio id="music" src="https://mir1.kashoob.com/audio/202401/enc_17067000025355098694788.mp3"></audio>
+  <script type="module" src="/src/scripts/main.ts"></script>
+</body>
+</html>

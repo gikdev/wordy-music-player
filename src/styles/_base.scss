@@ -1,0 +1,48 @@
+$time: 150ms;
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+html, body {
+  min-height: 100vh;
+  background: $gray-12;
+  color: $gray-0;
+  box-sizing: border-box;
+  font-family: Vazirmatn;
+  position: relative;
+}
+html { font-size: 62.5%; }
+body { font-size: 1.5rem; }
+
+#app {
+  background: $gray-11;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.header, .footer {
+  background: $gray-10;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.main {
+  flex-grow: 1;
+  flex-shrink: 1;
+  display: flex;
+  position: relative;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  font-size: 80%;
+}

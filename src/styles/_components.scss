@@ -1,0 +1,86 @@
+.link {
+  &:link, &:visited {
+    color: $blue-5;
+    transition: all $time;
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+  }
+  &:hover, &:active {
+    color: $green-5;
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.logo {
+  color: inherit;
+  text-decoration: none;
+  font-size: 120%;
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  transition: all $time;
+
+  &:hover {
+    background: $gray-9;
+  }
+  &__img {
+    width: 3rem;
+  }
+  &__text {
+    font-family: Vazirmatn;
+    font-weight: 800;
+  }
+}
+
+.player {
+  @include centeredBox;
+  background-image: url(/wordy-music-player/images/banner.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wrapper {
+  @include centeredBox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 200%;
+
+  background: rgba(0, 0, 0, 0.60);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border: 1px solid rgba(0, 0, 0, 0.39);
+}
+.pop {
+  animation: pop $time linear 1;
+}
+.special {
+  color: goldenrod;
+  font-family: IranNastaliq;
+  font-size: 400%;
+}
+@keyframes pop {
+  from {
+    font-size: 10%;
+  }
+  80% {
+    font-size: 250%;
+  }
+  to {
+    font-size: 100%;
+  }
+}
+
+@media (orientation: landscape) {
+  .player, .wrapper { max-height: 100%; height: 100%; }
+}
+
+@media (orientation: portrait) {
+  .player, .wrapper { max-width: 100%; width: 100%; }
+}
